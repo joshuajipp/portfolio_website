@@ -157,6 +157,7 @@ ul {
 .intro__img img {
     display: block;
     width: 100%;
+    border-radius: 50%;
 }
 
 .intro__title {
@@ -244,6 +245,7 @@ ul {
     transform: scale(1.15);
 }
 
+
 /* Black Styles */
 
 body.is-black {
@@ -306,6 +308,7 @@ body.is-black {
 .is-black .header__mob-menu {
     color: var(--invert-text-color);
 }
+
 
 /* Media Queries */
 
