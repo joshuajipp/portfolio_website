@@ -24,25 +24,13 @@
                                 <a href="#" title="" class="header-menu__link">Home</a>
                             </li>
                             <li class="header-menu__item">
-                                <a href="#" title="" class="header-menu__link">About</a>
-                            </li>
-                            <li class="header-menu__item">
-                                <a href="#" title="" class="header-menu__link">Skills</a>
-                            </li>
-                            <li class="header-menu__item">
-                                <a href="#" title="" class="header-menu__link">Services</a>
-                            </li>
-                            <li class="header-menu__item">
-                                <a href="#" title="" class="header-menu__link">Portfolio</a>
-                            </li>
-                            <li class="header-menu__item">
                                 <a href="#" title="" class="header-menu__link">Contact</a>
                             </li>
                         </ul>
                     </div>
                     <div class="header__changer">
                         <div class="header__moon">
-                            <i class='bx bx-moon'></i>
+                            <i id = "dark_mode_toggle" onclick= "iconChanger(this)" class='bx bx-moon'></i>
                         </div>
                     </div>
                     <div class="header__mob">
@@ -59,8 +47,8 @@
         <div class="intro__container container">
             <div class="intro__body">
                 <div class="intro__content">
-                    <h1 class="intro__title">Hi, I'm <span>Joshua</span></h1>
-                    <span class="intro__position">Software Engineering Student</span>
+                    <h1 class="intro__title">Hey, I'm <span>Joshua</span></h1>
+                    <span class="intro__position">Software Engineering Student at the University of Calgary</span>
                     <p class="intro__text">Welcome to my website! If you are curious about what I am working on,
                         feel free to check out my personal projects in the "portfolio" section. If you need to reach me,
                         do not be shy to contact me.
@@ -76,7 +64,7 @@
                             <a href="https://github.com/joshuajipp" target="_blank" rel="noopener noreferrer" title="GitHub Profile" class="intro-soc__link"><i class='bx bxl-github'></i></a>
                         </div>
                         <div class="intro-soc__item">
-                            <a href="#" title="" class="intro-soc__link"><i class='&#127937'></i></a>
+                            <a href="https://drive.google.com/file/d/1OutKTxK_hy2ZoiOJH8NzgFoAiAjKdOqk/view?usp=sharing" target="_blank" rel="noopener noreferrer"  title="" class="intro-soc__link"><i class='bx bxs-file-pdf'></i></a>
                         </div>
                     </div>
                 </div>
@@ -86,6 +74,31 @@
             </div>
         </div>
     </div>
+    <div class="container">
+        <form action="action_page.php">
+        
+
+      
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+        <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+      </div>
 
 
     <script src="script.js"></script>
