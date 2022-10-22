@@ -24,7 +24,7 @@
                                 <a href="#" title="" class="header-menu__link">Home</a>
                             </li>
                             <li class="header-menu__item">
-                                <a href="#" title="" class="header-menu__link">Contact</a>
+                                <a href="#forum_container" title="" class="header-menu__link">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -54,7 +54,7 @@
                         do not be shy to contact me.
                     </p>
                     <div class="intro__btn">
-                        <a href="#" title="" class="btn">Contact Me<i class='bx bx-right-arrow-alt'></i></a>
+                        <a href="#forum_container" title="" class="btn">Contact Me<i class='bx bx-right-arrow-alt'></i></a>
                     </div>
                     <div class="intro__socials intro-soc">
                         <div class="intro-soc__item">
@@ -74,29 +74,28 @@
             </div>
         </div>
     </div>
-    <div class="container">
-        <form action="action_page.php">
+
+    <div class="container" id="forum_container">
+        <form action="https://formspree.io/joshuajipp@gmail.com" method="POST">
         
 
+            <label for="email" class="labels">Email</label>
+            <input type="email" id="email" class="text_info" name="_replyto" required placeholder="Enter email address...">
+
+            <label for="fname" class="labels">First Name</label>
+            <input type="text" id="fname" name="firstname" class="text_info" placeholder="Enter first name...">
       
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <label for="lname" class="labels">Last Name</label>
+            <input type="text" id="lname" name="lastname" class="text_info" placeholder="Enter last name...">
+
+            <label for="lname" class="labels">Subject</label>
+            <input type="text" id="subject" name="_subject" class="text_info" placeholder="Enter email subject...">
       
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-      
-        <label for="country">Country</label>
-          <select id="country" name="country">
-            <option value="australia">Australia</option>
-            <option value="canada">Canada</option>
-            <option value="usa">USA</option>
-          </select>
-      
-          <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-      
-          <input type="submit" value="Submit">
-      
+            <label for="subject" class="labels">Message</label>
+            <textarea id="subject" name="subject" class="text_info" placeholder="Enter message..."></textarea>
+
+            <input type="submit" value="Send"></div>
+
         </form>
       </div>
 
