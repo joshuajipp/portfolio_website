@@ -8,7 +8,7 @@
     --white-color: #FFFFFF;
     --text-color: #484848;
     --gray-color: #888888;
-    --invert-primary-color: #ff0000;
+    --invert-primary-color: #ff6464;
     --invert-text-color: #FFFFFF;
     --invert-bg-color: #2B3137;
 }
@@ -35,6 +35,22 @@ a {
 ul {
     list-style: none;
 }
+
+input[type=text], select, textarea, input[type=email]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    font: Montserrat;
+    resize: vertical 
+  }
+  
+
+
 
 .container {
     max-width: 1100px;
@@ -252,6 +268,7 @@ ul {
 .labels{
     color: (--text-color);
     font-size: 21px;
+    transition: 0.3s;
 }
 .text_info{
     font-size: 16px;
@@ -267,6 +284,11 @@ ul {
 
 .paragraph_box{
     height: 100px;
+}
+#submit_button{
+    font-size: 18px;
+    font-weight: 400;
+    padding: 6px 30px;
 }
 
 
@@ -339,9 +361,6 @@ body.is-black {
     background-color: var(--invert-bg-color);
     color: var(--invert-text-color);
 }
-
-
-/* Media Queries */
 
 @media (max-width: 1023px) {
     .header-menu__link {
@@ -459,40 +478,4 @@ body.is-black {
         justify-content: center;
     }
 }
-/* Style inputs with type="text", select elements and textareas */
-    input[type=text], select, textarea, input[type=email]{
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    font-size: 16px;
-    font: Montserrat;
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-  }
-  
-  /* Style the submit button with a specific background color etc */
-  input[type=submit] {
-    background-color: var(--white-color);
-    color: var(--primary-color);
-    padding: 12px 20px;
-    padding-bottom: 15px;
-    border: 3px solid;
-    border-color: var(--primary-color);
-    border-radius: 30%;
-    cursor: pointer;
-    font-weight: bold;
-    font-family: Montserrat;
-    transition: 0.3s;
-  }
-  
-  /* When moving the mouse over the submit button, add a darker green color */
-  input[type=submit]:hover {
-    background-color: var(--primary-color);
-    color: var(--invert-text-color);
-    transition: 0.3s;
-    transform: scale(1.2);
-  }
-  
+
