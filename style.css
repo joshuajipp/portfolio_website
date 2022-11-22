@@ -68,6 +68,7 @@ input[type=text], select, textarea, input[type=email]{
     top: 0;
     left: 0;
     width: 100%;
+    overflow: hidden;
 }
 
 .header__body {
