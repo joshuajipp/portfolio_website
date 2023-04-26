@@ -1,15 +1,11 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 
 function ProjectItem(props) {
-  const navigate = useNavigate();
+  const handleNewTab = () => {
+    window.open(props.url, "_blank");
+  };
   return (
-    <div
-      className="projectItem"
-      onClick={() => {
-        navigate("/project/" + props.id);
-      }}
-    >
+    <div className="projectItem" onClick={handleNewTab}>
       <div
         style={{ backgroundImage: `url(${props.image})` }}
         className="bgImage"
