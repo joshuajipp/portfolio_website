@@ -67,6 +67,15 @@
 .projectItem h1 {
   font-size: 25px;
 }
+
+.first-word {
+  color: var(--primary-color);
+  font-weight: bolder;
+  transition: 0.3s;
+}
+.is-black .first-word {
+  color: var(--invert-primary-color);
+}
 @media only screen and (max-width: 1300px) {
   .projectList {
     grid-template-columns: 1fr 1fr;

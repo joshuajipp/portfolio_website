@@ -23,7 +23,8 @@ function Navbar(props) {
         <div class="header__body">
           <div class="header__leftside">
             <Link to="/" title="" class="header__logo">
-              Joshua Jipp
+              <span className="first-letter">Joshua</span>{" "}
+              <span className="second-letter">Jipp</span>
             </Link>
           </div>
           <div class="header__rightside">

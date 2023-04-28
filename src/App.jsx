@@ -28,7 +28,7 @@ function App() {
     <div className="App">
       <Router>
         <Navbar handleClick={handleClick} isDarkMode={isDarkMode} />
-        <AnimatedRoutes />
+        <AnimatedRoutes isDarkMode={isDarkMode} />
         <Footer />
       </Router>
     </div>

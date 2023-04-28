@@ -1,6 +1,7 @@
 import wordleImg from "./images/wordle.png";
 import lotionImg from "./images/lotion.png";
 import lastShowImg from "./images/last_show.png";
+import portfolioImg from "./images/portfolio.png";
 export const ProjectList = [
   {
     name: "Obituary Generation App",
@@ -24,5 +25,6 @@ export const ProjectList = [
   {
     name: "Personal Portfolio",
     url: "/",
+    image: portfolioImg,
   },
 ];

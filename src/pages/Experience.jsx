@@ -7,8 +7,9 @@ import "react-vertical-timeline-component/style.min.css";
 import SchoolIcon from "@material-ui/icons/School";
 import WorkIcon from "@material-ui/icons/Work";
 import { motion } from "framer-motion";
+import "../styles/Experience.css";
 
-function Experience() {
+function Experience(props) {
   return (
     <motion.div
       className="experience"
@@ -16,11 +17,18 @@ function Experience() {
       animate={{ width: "100%" }}
       exit={{ x: window.innerWidth, transition: { duration: 0.2 } }}
     >
-      <VerticalTimeline lineColor="#3e497a">
+      <VerticalTimeline
+        lineColor={
+          props.isDarkMode ? "var(--white-color)" : "var(--gray-color)"
+        }
+      >
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           date="September 2018 - June 2021"
-          iconStyle={{ background: "#3e497a", color: "#fff" }}
+          iconStyle={{
+            background: props.isDarkMode ? "#ff6464" : "#ff0000",
+            color: "#fff",
+          }}
           icon={<SchoolIcon />}
         >
           <h3 className="vertical-timeline-element-title">

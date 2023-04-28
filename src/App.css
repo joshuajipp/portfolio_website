@@ -1,11 +1,11 @@
 :root {
-  --primary-color: #ff0000;
+  --primary-color: #2e8cff;
   --white-color: #f2f2f2;
-  --text-color: #484848;
+  --text-color: #5b5b5b;
   --gray-color: #888888;
-  --invert-primary-color: #ff6464;
+  --invert-primary-color: #77b3fc;
   --invert-text-color: #ececec;
-  --invert-bg-color: #2b3137f6;
+  --invert-bg-color: #2b3137;
 }
 .App {
   width: 100%;

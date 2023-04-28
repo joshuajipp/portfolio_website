@@ -8,13 +8,8 @@ import "../styles/Footer.css";
 function Footer() {
   return (
     <div className="footer">
-      <div className="socialMedia">
-        <InstagramIcon />
-        <TwitterIcon />
-        <FacebookIcon />
-        <LinkedInIcon />
-      </div>
-      <p>Joshua Jipp</p>
+      <div className="socialMedia"></div>
+      <p> &#169; Joshua Jipp</p>
     </div>
   );
 }

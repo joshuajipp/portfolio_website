@@ -1,0 +1,27 @@
+.vertical-timeline-element-icon {
+  background: var(--primary-color) !important;
+  transition: 0.3s;
+
+  box-shadow: 0 0 0 4px rgb(255, 255, 255), inset 0 2px 0 rgba(0, 0, 0, 0.08),
+    0 3px 0 4px rgba(0, 0, 0, 0.05) !important;
+}
+
+.vertical-timeline-element--education .vertical-timeline-element-icon {
+  background: var(--gray-color) !important;
+  box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08),
+    0 3px 0 4px rgba(0, 0, 0, 0.05) !important;
+}
+
+.is-black .vertical-timeline-element-icon {
+  background: var(--invert-primary-color) !important;
+
+  box-shadow: 0 0 0 4px rgb(255, 255, 255), inset 0 2px 0 rgba(0, 0, 0, 0.08),
+    0 3px 0 4px rgba(0, 0, 0, 0.05) !important;
+}
+.is-black
+  .vertical-timeline-element--education
+  .vertical-timeline-element-icon {
+  background: var(--text-color) !important;
+  box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08),
+    0 3px 0 4px rgba(0, 0, 0, 0.05) !important;
+}

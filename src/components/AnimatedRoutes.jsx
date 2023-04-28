@@ -4,14 +4,17 @@ import Projects from "../pages/Projects";
 import Experience from "../pages/Experience";
 import { AnimatePresence } from "framer-motion";
 
-function AnimatedRoutes() {
+function AnimatedRoutes(props) {
   const location = useLocation();
   return (
     <AnimatePresence>
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/experience" element={<Experience />} />
+        <Route
+          path="/experience"
+          element={<Experience isDarkMode={props.isDarkMode} />}
+        />
       </Routes>
     </AnimatePresence>
   );

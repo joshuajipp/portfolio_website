@@ -374,6 +374,15 @@ body.is-black {
 .burger {
   font-size: 30px;
 }
+.first-letter {
+  color: var(--primary-color);
+}
+.is-black .first-letter {
+  color: var(--invert-text-color);
+}
+.is-black .second-letter {
+  color: var(--invert-primary-color);
+}
 @media (max-width: 1027px) {
   .header-menu__link {
     font-size: 16px;

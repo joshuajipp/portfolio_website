@@ -20,7 +20,10 @@ function Projects() {
       animate={{ width: "100%" }}
       exit={{ x: window.innerWidth, transition: { duration: 0.2 } }}
     >
-      <h1 className="projects-header"> My Personal Projects</h1>
+      <h1 className="projects-header">
+        {" "}
+        Project <span className="first-word">Gallery</span>
+      </h1>
       <div className="projectList">
         {ProjectList.map((project, idx) => {
           return (
