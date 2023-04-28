@@ -21,4 +21,8 @@ export const ProjectList = [
     skills: "JavaScript, HTML, CSS",
     url: "https://rainbow-fox-450270.netlify.app",
   },
+  {
+    name: "Personal Portfolio",
+    url: "/",
+  },
 ];

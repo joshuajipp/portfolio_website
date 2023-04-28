@@ -10,7 +10,7 @@ function ProjectItem(props) {
         style={{ backgroundImage: `url(${props.image})` }}
         className="bgImage"
       />
-      <h1> {props.name} </h1>
+      <h1 className="project-title"> {props.name} </h1>
     </div>
   );
 }

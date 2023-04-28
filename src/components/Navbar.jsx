@@ -5,7 +5,6 @@ import ReorderIcon from "@material-ui/icons/Reorder";
 
 function Navbar(props) {
   const [isActive, setIsActive] = useState(false);
-  const isDesktop = window.innerWidth > 767;
 
   function handleMenuClick() {
     setIsActive(!isActive);
@@ -71,7 +70,7 @@ function Navbar(props) {
 
             <div className="header__mob" onClick={handleMenuClick}>
               <div className="header__mob-menu">
-                <i className="bx bx-menu"></i>
+                <i className="bx bx-menu burger"></i>
               </div>
             </div>
           </div>

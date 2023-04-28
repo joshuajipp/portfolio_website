@@ -1,12 +1,13 @@
 .footer {
   width: 100%;
   height: 200px;
-  background: #21325e;
+  background: #ff0000;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding-top: 10px;
+  transition: 0.3s;
 }
 
 .socialMedia svg {
@@ -14,13 +15,17 @@
   margin: 20px;
   font-size: 70px;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .footer p {
   color: white;
 }
+.is-black .footer {
+  background: #ff6464;
+}
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 775px) {
   .footer svg {
     font-size: 50px;
   }

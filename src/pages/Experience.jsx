@@ -21,7 +21,6 @@ function Experience() {
             Crescent Heights High School
           </h3>
           <h4 className="vertical-timeline-element-subtitle">Calgary, AB</h4>
-          <p>Activities and Accomplishments:</p>
           <ul>
             <li>Captain of the Basketball Team</li>
             <li>Grade 10 & 11 Athlete of the Year</li>
