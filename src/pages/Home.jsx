@@ -6,14 +6,21 @@ import "../styles/Home.css";
 import "../styles/Navbar.css";
 import profilePic from "../images/joshjipp.jpeg";
 import { motion } from "framer-motion";
+import { useRef, useEffect } from "react";
 
 function Home() {
+  const pageRef = useRef(null);
+
+  useEffect(() => {
+    pageRef.current.classList.add("slide-from-left");
+  }, []);
   return (
     <motion.div
       class="page__intro intro"
+      ref={pageRef}
       initial={{ width: 0 }}
       animate={{ width: "100%" }}
-      exit={{ x: window.innerWidth, transition: { duration: 0.3 } }}
+      exit={{ x: window.innerWidth, transition: { duration: 0.2 } }}
     >
       <div class="intro__container container">
         <div class="intro__body">

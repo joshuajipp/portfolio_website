@@ -2,16 +2,23 @@ import React from "react";
 import ProjectItem from "../components/ProjectItem";
 import { ProjectList } from "../ProjectList";
 import { motion } from "framer-motion";
+import { useRef, useEffect } from "react";
 
 import "../styles/Projects.css";
 
 function Projects() {
+  const pageRef = useRef(null);
+
+  useEffect(() => {
+    pageRef.current.classList.add("slide-from-left");
+  }, []);
   return (
     <motion.div
+      ref={pageRef}
       className="projects"
       initial={{ width: 0 }}
       animate={{ width: "100%" }}
-      exit={{ x: window.innerWidth, transition: { duration: 0.3 } }}
+      exit={{ x: window.innerWidth, transition: { duration: 0.2 } }}
     >
       <h1 className="projects-header"> My Personal Projects</h1>
       <div className="projectList">

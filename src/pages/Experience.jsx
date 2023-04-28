@@ -14,7 +14,7 @@ function Experience() {
       className="experience"
       initial={{ width: 0 }}
       animate={{ width: "100%" }}
-      exit={{ x: window.innerWidth, transition: { duration: 0.3 } }}
+      exit={{ x: window.innerWidth, transition: { duration: 0.2 } }}
     >
       <VerticalTimeline lineColor="#3e497a">
         <VerticalTimelineElement
