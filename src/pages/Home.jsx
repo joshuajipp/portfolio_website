@@ -5,10 +5,16 @@ import GithubIcon from "@material-ui/icons/GitHub";
 import "../styles/Home.css";
 import "../styles/Navbar.css";
 import profilePic from "../images/joshjipp.jpeg";
+import { motion } from "framer-motion";
 
 function Home() {
   return (
-    <div class="page__intro intro">
+    <motion.div
+      class="page__intro intro"
+      initial={{ width: 0 }}
+      animate={{ width: "100%" }}
+      exit={{ x: window.innerWidth, transition: { duration: 0.3 } }}
+    >
       <div class="intro__container container">
         <div class="intro__body">
           <div class="intro__content">
@@ -75,7 +81,7 @@ function Home() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
