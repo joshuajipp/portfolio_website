@@ -25,3 +25,22 @@
   box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08),
     0 3px 0 4px rgba(0, 0, 0, 0.05) !important;
 }
+.vertical-timeline-element-content {
+  color: var(--text-color);
+  transition: 0.3s;
+}
+.is-black .vertical-timeline-element-content {
+  background-color: var(--invert-bg-color);
+  color: var(--invert-text-color);
+  box-shadow: 0 3px 0 #24242481;
+}
+.vertical-timeline-element-content-arrow {
+  transition: 0.3s;
+}
+.is-black .vertical-timeline-element-content-arrow {
+  border-right-color: #343536;
+}
+
+.vertical-timeline-custom#line {
+  transition: 0.3s;
+}
