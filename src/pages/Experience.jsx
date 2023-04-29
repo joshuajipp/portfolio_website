@@ -31,11 +31,14 @@ function Experience(props) {
           }}
           icon={<SchoolIcon />}
         >
-          <h3 className="vertical-timeline-element-title">
-            Crescent Heights High School
-          </h3>
-          <h4 className="vertical-timeline-element-subtitle">Calgary, AB</h4>
-          <ul>
+          <div className="note-header-indent">
+            <h3 className="vertical-timeline-element-title">
+              Crescent Heights High School
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">Calgary, AB</h4>
+            <h5 className="grade"> Grade: 91%</h5>
+          </div>
+          <ul className="text-box">
             <li>Captain of the Basketball Team</li>
             <li>Grade 10 & 11 Athlete of the Year</li>
             <li>Basketball and Volleyball Team</li>
@@ -48,11 +51,13 @@ function Experience(props) {
           iconStyle={{ background: "#e9d35b", color: "#fff" }}
           icon={<WorkIcon />}
         >
-          <h3 className="vertical-timeline-element-title">
-            Seasonal Warehouse Attendant
-          </h3>
-          <h4 className="vertical-timeline-element-subtitle">Calgary, AB</h4>
-          <ul>
+          <div className="note-header-indent">
+            <h3 className="vertical-timeline-element-title">
+              Seasonal Warehouse Attendant
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">Calgary, AB</h4>
+          </div>
+          <ul className="text-box">
             <li>
               Filled customers orders, packaged them, created invoices, and got
               them ready for shipping
@@ -66,12 +71,15 @@ function Experience(props) {
           iconStyle={{ background: "#3e497a", color: "#fff" }}
           icon={<SchoolIcon />}
         >
-          <h3 className="vertical-timeline-element-title">
-            University of Calgary
-          </h3>
-          <h4 className="vertical-timeline-element-subtitle">Calgary, AB</h4>
+          <div className="note-header-indent">
+            <h3 className="vertical-timeline-element-title">
+              University of Calgary
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">Calgary, AB</h4>
+            <h5 className="grade">Grade: 3.7/4.0</h5>
+          </div>
 
-          <p>Bachelor of Science - Software Engineering</p>
+          <div>Bachelor of Science - Software Engineering</div>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
@@ -80,11 +88,13 @@ function Experience(props) {
           iconStyle={{ background: "#e9d35b", color: "#fff" }}
           icon={<WorkIcon />}
         >
-          <h3 className="vertical-timeline-element-title">
-            Big Data Developer Intern
-          </h3>
-          <h4 className="vertical-timeline-element-subtitle">Calgary, AB</h4>
-          <ul>
+          <div className="note-header-indent">
+            <h3 className="vertical-timeline-element-title">
+              Big Data Developer Intern
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">Calgary, AB</h4>
+          </div>
+          <ul className="text-box">
             <li>
               Utilized Python3 and Apache Spark to build object-oriented data
               transformation programs for clients.
