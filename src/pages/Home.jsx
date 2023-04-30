@@ -4,11 +4,12 @@ import EmailIcon from "@material-ui/icons/Email";
 import GithubIcon from "@material-ui/icons/GitHub";
 import "../styles/Home.css";
 import "../styles/Navbar.css";
-import profilePic from "../images/joshjipp.jpeg";
+import darkProfile from "../images/dark-profile.png";
+import lightProfile from "../images/light-profile.png";
 import { motion } from "framer-motion";
 import { useRef, useEffect } from "react";
 
-function Home() {
+function Home(props) {
   const pageRef = useRef(null);
 
   useEffect(() => {
@@ -32,11 +33,15 @@ function Home() {
               Software Engineering Student at the University of Calgary
             </span>
             <p class="intro__text">
-              Welcome to my personal website! To toggle dark-mode on/off, click
-              the icon at the top right corner. If you are curious about what I
-              am working on, feel free to check out GitHub account. My resume
-              and LinkedIn profile are also provided below. Feel free to contact
-              me about any inquiries or potential opportunites.
+              Welcome to my personal portfolio! I am a 3rd year Software
+              Engineering student at the University of Calgary. I am passionate
+              about software development and am always looking for new
+              opportunities to learn and grow as a developer. Feel free to
+              toggle dark mode and browse around to learn more about me! If you
+              are interested in the source code for this website and my other
+              projects, check out my GitHub profile. My resume is provided
+              below, feel free to reach out via LinkedIn or the Contact page if
+              you have any questions or potential opportunities!
             </p>
             <div class="intro__btn">
               <a href="#forum_container" title="contact me" class="btn">
@@ -82,7 +87,7 @@ function Home() {
           <div class="intro__img">
             <img
               class="profile_pic"
-              src={profilePic}
+              src={props.isDarkMode ? darkProfile : lightProfile}
               alt="Joshua Jipp Picture"
             />
           </div>

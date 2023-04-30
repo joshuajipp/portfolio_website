@@ -165,7 +165,6 @@ input[type="email"] {
 .intro__img img {
   display: block;
   width: 100%;
-  border-radius: 50%;
 }
 
 .intro__title {
@@ -513,7 +512,7 @@ body.is-black {
 }
 
 .slide-from-left {
-  animation: slide-from-left 0.5s ease-out;
+  animation: slide-from-left 0.5s ease-in;
 }
 
 @keyframes slide-from-left {
@@ -522,5 +521,13 @@ body.is-black {
   }
   to {
     transform: translateX(0);
+  }
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
