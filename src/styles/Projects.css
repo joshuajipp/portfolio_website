@@ -29,6 +29,64 @@
 .is-black .project-title {
   color: var(--invert-text-color);
 }
+/* BUTTON STYLING */
+.toggle-btn {
+  position: relative;
+  display: flex;
+  width: 300px; /* change the width */
+  height: 35px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.toggle-btn input {
+  display: none;
+}
+
+.slider {
+  /* position: absolute; */
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #2b3137;
+  border-radius: 46px;
+  transition: all 0.3s ease;
+  width: 80px; /* add this line */
+  height: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px; /* increase the size of the circle */
+  width: 20px; /* increase the size of the circle */
+  translate: 5px 5px;
+  background-color: white;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+input:checked + .slider {
+  background-color: #77b3fc;
+}
+
+input:checked + .slider:before {
+  transform: translateX(51px); /* increase the distance the circle moves */
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #77b3fc;
+}
+
+.slider.round {
+  border-radius: 46px; /* increase the border-radius */
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
 
 /* MENU ITEM STYLING */
 
@@ -99,6 +157,7 @@
 .skills-list li {
   font-size: 14.5px;
 }
+
 @media only screen and (max-width: 1300px) {
   .projectList {
     grid-template-columns: 1fr 1fr;
