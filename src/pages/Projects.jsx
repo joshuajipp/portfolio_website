@@ -31,6 +31,7 @@ function Projects() {
               id={idx}
               name={project.name}
               image={project.image}
+              skills={project.skills}
               url={project.url}
             />
           );

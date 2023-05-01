@@ -41,7 +41,6 @@ function Experience(props) {
           <ul className="text-box">
             <li>Captain of the Basketball Team</li>
             <li>Grade 10 & 11 Athlete of the Year</li>
-            <li>Basketball and Volleyball Team</li>
             <li>Honours Student</li>
           </ul>
         </VerticalTimelineElement>

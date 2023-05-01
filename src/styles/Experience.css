@@ -50,3 +50,9 @@ ul.text-box {
 .note-header-indent {
   margin-bottom: 5px;
 }
+.grade {
+  margin-top: 2px;
+}
+.text-box > li {
+  margin-top: 5px;
+}
