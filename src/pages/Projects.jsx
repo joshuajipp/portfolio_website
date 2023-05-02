@@ -24,9 +24,12 @@ function Projects() {
         {" "}
         Project <span className="first-word">Gallery</span>
       </h1>
+
       <label class="toggle-btn">
+        <div className="web-url">Website</div>
         <input type="checkbox" />
         <span class="slider"></span>
+        <div className="code-url">Source Code</div>
       </label>
       <div className="projectList">
         {ProjectList.map((project, idx) => {
