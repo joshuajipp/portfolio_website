@@ -24,12 +24,22 @@ function Projects(props) {
         {" "}
         Project <span className="first-word">Gallery</span>
       </h1>
-      <div onClick={props.setIsSourceCode}>
+      <div onChange={props.setIsSourceCode}>
         <label className="toggle-btn">
-          <div className="web-url">Website</div>
+          <div
+            className="web-url"
+            style={props.isSourceCode ? { opacity: 0.25 } : { opacity: 1 }}
+          >
+            Website
+          </div>
           <input type="checkbox" defaultChecked={props.isSourceCode} />
           <span className="slider"></span>
-          <div className="code-url">Source Code</div>
+          <div
+            className="code-url"
+            style={!props.isSourceCode ? { opacity: 0.25 } : { opacity: 1 }}
+          >
+            Source Code
+          </div>
         </label>
       </div>
       <div className="projectList">
@@ -40,7 +50,7 @@ function Projects(props) {
               name={project.name}
               image={project.image}
               skills={project.skills}
-              url={project.url}
+              url={!props.isSourceCode ? project.web_url : project.source_url}
             />
           );
         })}

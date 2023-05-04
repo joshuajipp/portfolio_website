@@ -18,7 +18,8 @@ export const ProjectList = [
       "AWS Param. Store",
     ],
 
-    url: "https://imaginative-tulumba-a6be62.netlify.app",
+    web_url: "https://imaginative-tulumba-a6be62.netlify.app",
+    source_url: "https://github.com/joshuajipp/the-last-show.git",
   },
   {
     name: "Note-Taking App",
@@ -33,17 +34,20 @@ export const ProjectList = [
       "Google OAuth 2.0",
       "AWS S3",
     ],
-    url: "https://exquisite-hamster-0169f7.netlify.app",
+    web_url: "https://exquisite-hamster-0169f7.netlify.app",
+    source_url: "https://github.com/joshuajipp/lotionReactApp.git",
   },
   {
     name: "Wordle Game",
     image: wordleImg,
     skills: ["JavaScript", "CSS", "HTML"],
-    url: "https://rainbow-fox-450270.netlify.app",
+    web_url: "https://rainbow-fox-450270.netlify.app",
+    source_url: "https://github.com/joshuajipp/wordle-minigame.git",
   },
   {
     name: "Personal Portfolio",
-    url: "/",
+    source_url: "https://github.com/joshuajipp/portfolio_website.git",
+    web_url: "/",
     skills: ["ReactJS", "CSS"],
     image: portfolioImg,
   },
