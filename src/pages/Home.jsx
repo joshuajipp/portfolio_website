@@ -85,11 +85,19 @@ function Home(props) {
             </div>
           </div>
           <div class="intro__img">
-            <img
-              class="profile_pic"
-              src={props.isDarkMode ? darkProfile : lightProfile}
-              alt="Joshua Jipp Picture"
-            />
+            {props.isDarkMode ? (
+              <img
+                class="dark_profile_pic"
+                src={darkProfile}
+                alt="Joshua Jipp Image"
+              />
+            ) : (
+              <img
+                className="light_profile_pic"
+                src={lightProfile}
+                alt="Joshua Jipp Image"
+              />
+            )}
           </div>
         </div>
       </div>

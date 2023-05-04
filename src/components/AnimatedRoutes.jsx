@@ -10,7 +10,15 @@ function AnimatedRoutes(props) {
     <AnimatePresence>
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home isDarkMode={props.isDarkMode} />} />
-        <Route path="/projects" element={<Projects />} />
+        <Route
+          path="/projects"
+          element={
+            <Projects
+              isSourceCode={props.isSourceCode}
+              setIsSourceCode={props.setIsSourceCode}
+            />
+          }
+        />
         <Route
           path="/experience"
           element={<Experience isDarkMode={props.isDarkMode} />}

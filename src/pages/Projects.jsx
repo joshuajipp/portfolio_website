@@ -6,7 +6,7 @@ import { useRef, useEffect } from "react";
 
 import "../styles/Projects.css";
 
-function Projects() {
+function Projects(props) {
   const pageRef = useRef(null);
 
   useEffect(() => {
@@ -24,6 +24,14 @@ function Projects() {
         {" "}
         Project <span className="first-word">Gallery</span>
       </h1>
+      <div onClick={props.setIsSourceCode}>
+        <label className="toggle-btn">
+          <div className="web-url">Website</div>
+          <input type="checkbox" defaultChecked={props.isSourceCode} />
+          <span className="slider"></span>
+          <div className="code-url">Source Code</div>
+        </label>
+      </div>
       <div className="projectList">
         {ProjectList.map((project, idx) => {
           return (
@@ -31,6 +39,7 @@ function Projects() {
               id={idx}
               name={project.name}
               image={project.image}
+              skills={project.skills}
               url={project.url}
             />
           );

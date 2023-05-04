@@ -44,9 +44,15 @@
 .vertical-timeline-custom#line {
   transition: 0.3s;
 }
-ul.text-box {
+/* ul.text-box {
   list-style-type: circle;
-}
+} */
 .note-header-indent {
   margin-bottom: 5px;
+}
+.grade {
+  margin-top: 2px;
+}
+.text-box > li {
+  margin-top: 5px;
 }

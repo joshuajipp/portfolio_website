@@ -22,7 +22,7 @@ a {
   text-decoration: none;
 }
 
-ul {
+ul > .header-menu__item {
   list-style: none;
 }
 
@@ -283,6 +283,13 @@ input[type="email"] {
   padding: 6px 30px;
 }
 
+.light_profile_pic {
+  animation: fadeInAnimation ease 0.5s;
+}
+.is-black .dark_profile_pic {
+  animation: fadeIn ease 0.5s;
+}
+
 /* Black Styles */
 
 body.is-black {
@@ -382,6 +389,15 @@ body.is-black {
 .is-black .second-letter {
   color: var(--invert-primary-color);
 }
+
+/* .is-black .light_profile_pic {
+  transition: 0.3s;
+  opacity: 0;
+} */
+/* .is-black .dark_profile_pic {
+  transition: 0.3s;
+  opacity: 1;
+} */
 @media (max-width: 1027px) {
   .header-menu__link {
     font-size: 16px;
@@ -502,7 +518,10 @@ body.is-black {
   .dm-icon {
     font-size: 25px;
   }
-  .profile_pic {
+  .dark_profile_pic {
+    max-width: 400px;
+  }
+  .light_profile_pic {
     max-width: 400px;
   }
   .intro__img {
@@ -524,10 +543,18 @@ body.is-black {
   }
 }
 @keyframes fadeInAnimation {
-  0% {
+  from {
     opacity: 0;
   }
-  100% {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
     opacity: 1;
   }
 }

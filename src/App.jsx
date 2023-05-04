@@ -15,6 +15,7 @@ import AnimatedRoutes from "./components/AnimatedRoutes";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isSourceCode, setIsSourceCode] = useState(false);
 
   const handleClick = () => {
     setIsDarkMode(!isDarkMode);
@@ -24,11 +25,18 @@ function App() {
       document.documentElement.classList.remove("is-black");
     }
   };
+  const handleCodeClick = () => {
+    setIsSourceCode(!isSourceCode);
+  };
   return (
     <div className="App">
       <Router>
         <Navbar handleClick={handleClick} isDarkMode={isDarkMode} />
-        <AnimatedRoutes isDarkMode={isDarkMode} />
+        <AnimatedRoutes
+          isDarkMode={isDarkMode}
+          isSourceCode={isSourceCode}
+          setIsSourceCode={handleCodeClick}
+        />
         <Footer />
       </Router>
     </div>
