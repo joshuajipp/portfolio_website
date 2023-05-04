@@ -44,9 +44,9 @@
 .vertical-timeline-custom#line {
   transition: 0.3s;
 }
-/* ul.text-box {
-  list-style-type: circle;
-} */
+ul.text-box {
+  margin-left: 20px;
+}
 .note-header-indent {
   margin-bottom: 5px;
 }
