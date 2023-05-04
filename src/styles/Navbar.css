@@ -22,7 +22,7 @@ a {
   text-decoration: none;
 }
 
-ul {
+ul > .header-menu__item {
   list-style: none;
 }
 
