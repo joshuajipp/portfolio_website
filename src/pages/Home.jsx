@@ -30,18 +30,18 @@ function Home(props) {
               Hey, I'm <span>Joshua</span>
             </h1>
             <span class="intro__position">
-              Software Engineering Student at the University of Calgary
+              Software Engineering Student at UCalgary
             </span>
             <p class="intro__text">
               Welcome to my personal portfolio! I am a 3rd year Software
               Engineering student at the University of Calgary. I am passionate
               about software development and am always looking for new
               opportunities to learn and grow as a developer. Feel free to
-              toggle dark mode and browse around to learn more about me! If you
-              are interested in the source code for this website and my other
-              projects, check out my GitHub profile. My resume is provided
-              below, feel free to reach out via LinkedIn or the Contact page if
-              you have any questions or potential opportunities!
+              toggle dark mode and browse around to learn more about me! Check
+              out my GitHub profile if you want to see what I have worked on. My
+              resume is provided below, feel free to reach out via LinkedIn or
+              the Contact page if you have any questions or potential
+              opportunities!
             </p>
             <div class="intro__btn">
               <a href="#forum_container" title="contact me" class="btn">
@@ -73,10 +73,10 @@ function Home(props) {
               </div>
               <div class="intro-soc__item">
                 <a
-                  href="https://drive.google.com/file/d/10P1MUtQluHbD9d9L_QVWPNrpAcP25eOS/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1NT51hITHpDMIUU4FB8u2PpDfiigWzezU/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
-                  title=""
+                  title="Resume"
                   class="intro-soc__link"
                 >
                   <i class="bx bxs-file-pdf"></i>
