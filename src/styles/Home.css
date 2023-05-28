@@ -55,6 +55,19 @@
 .list span {
   font-size: 20px;
 }
+.dark_profile_pic{
+  animation: fadein 2s;
+  display: None !important;
+}
+.is-black .dark_profile_pic{
+  display: block !important;
+}
+.light_profile_pic{
+  opacity:1;
+}
+.is-black .light_profile_pic{
+  display: None !important;
+}
 @media only screen and (max-width: 600px) {
   .about h2 {
     font-size: 40px;
