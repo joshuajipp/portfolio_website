@@ -69,7 +69,7 @@ function Contact() {
     <div className="contact">
       <div className="contact-container">
         <h1>
-          <span>Contact Me</span>
+          <span className="contactHead">Contact <span className="nestedHead">Me</span></span>
         </h1>
         {message && (
           <div className={message.class}>
@@ -78,35 +78,38 @@ function Contact() {
         )}
         <form onSubmit={submitForm} className="contactForm">
           <div>
-            <label htmlFor="name">Name</label>
+            <label className="labelTag" htmlFor="name">Name</label>
             <input
               onChange={updateFormControl}
               type="text"
               id="name"
               value={formState.name}
               name="name"
+              className="name text-area"
             />
           </div>
           <div>
-            <label htmlFor="email">Email</label>
+            <label className="labelTag" htmlFor="email">Email</label>
             <input
               onChange={updateFormControl}
               type="email"
               id="email"
               value={formState.email}
               name="email"
+              className="email text-area"
             />
           </div>
           <div>
-            <label htmlFor="message">Message</label>
+            <label className="labelTag" htmlFor="message">Message</label>
             <textarea
               onChange={updateFormControl}
               id="message"
               value={formState?.message}
               name="message"
+              className="message text-area" 
             ></textarea>
           </div>
-
+          
           <ReCAPTCHA
             ref={recaptchaRef}
             sitekey={recaptchaKey}
