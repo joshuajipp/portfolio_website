@@ -82,10 +82,20 @@
     font-family: 'Montserrat', sans-serif;
     border-radius: 15px;
     color: var(--text-color);
+    transition: 0.3s;
 
 }
 .contactForm .labelTag{
     color: var(--text-color);
     transition: 0.3s;
     font-weight: bold;
+}
+
+.is-black .contactForm .labelTag{
+    color: var(--invert-text-color);
+}
+
+.is-black .contactForm .text-area{
+    background-color: rgba(255, 0, 0, 0);
+    color: var(--invert-text-color);
 }
