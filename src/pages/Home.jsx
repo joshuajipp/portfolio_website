@@ -1,13 +1,11 @@
 import React from "react";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import EmailIcon from "@material-ui/icons/Email";
-import GithubIcon from "@material-ui/icons/GitHub";
 import "../styles/Home.css";
 import "../styles/Navbar.css";
 import darkProfile from "../images/dark-profile.png";
 import lightProfile from "../images/light-profile.png";
 import { motion } from "framer-motion";
 import { useRef, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function Home(props) {
   const pageRef = useRef(null);
@@ -44,9 +42,9 @@ function Home(props) {
               opportunities!
             </p>
             <div class="intro__btn">
-              <a href="#forum_container" title="contact me" class="btn">
+              <Link to="/contact" className="btn">
                 Contact Me<i class="bx bx-right-arrow-alt"></i>
-              </a>
+              </Link>
             </div>
             <div class="intro__socials intro-soc">
               <div class="intro-soc__item">
