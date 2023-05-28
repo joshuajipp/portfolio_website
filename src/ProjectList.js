@@ -16,6 +16,7 @@ export const ProjectList = [
       "Terraform",
       "AWS DynamoDB",
       "AWS Param. Store",
+      "AWS Polly",
     ],
 
     web_url: "https://imaginative-tulumba-a6be62.netlify.app",

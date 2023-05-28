@@ -59,6 +59,15 @@ function Navbar(props) {
                     Experience
                   </Link>
                 </li>
+                <li class="header-menu__item">
+                  <Link
+                    to="/contact"
+                    class="header-menu__link"
+                    onClick={handleNavigationClick}
+                  >
+                    Contact
+                  </Link>
+                </li>
               </ul>
             </div>
             <div className="moon-box" onClick={handleDarkMode}>

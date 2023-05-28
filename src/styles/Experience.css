@@ -1,3 +1,4 @@
+
 .vertical-timeline-element-icon {
   background: var(--primary-color) !important;
   transition: 0.3s;
@@ -26,13 +27,13 @@
     0 3px 0 4px rgba(0, 0, 0, 0.05) !important;
 }
 .vertical-timeline-element-content {
-  color: var(--text-color);
+  color: var(--text-color) !important;
   transition: 0.3s;
 }
 .is-black .vertical-timeline-element-content {
-  background-color: var(--invert-bg-color);
-  color: var(--invert-text-color);
-  box-shadow: 0 3px 0 #24242481;
+  background-color: var(--invert-bg-color) !important;
+  color: var(--invert-text-color) !important;
+  box-shadow: 0 3px 0 #24242481 !important;
 }
 .vertical-timeline-element-content-arrow {
   transition: 0.3s;
@@ -46,6 +47,7 @@
 }
 ul.text-box {
   margin-left: 20px;
+  
 }
 .note-header-indent {
   margin-bottom: 5px;

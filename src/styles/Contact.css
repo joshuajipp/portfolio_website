@@ -1,0 +1,73 @@
+
+  
+  .contact {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+
+    transition: 0.5s;
+  }
+  
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 70px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a box shadow to create a pop-out effect */
+    margin-bottom: 50px;
+  }
+  .contactForm{
+    padding-top: 5px;
+  }
+  
+  .submit-button {
+    margin-top: 20px;
+    background-color: #2e8cff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%; /* Set the width to 100% */
+    box-sizing: border-box; /* Include padding in the width calculation */
+  }  
+  
+  .submit-button:hover {
+    background-color: #1d6fad;
+  }
+
+  .error-msg{
+    color: white;
+    background-color: rgba(255, 24, 24, 0.8);
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+  }
+
+  .success-msg{
+    color: white;
+    background-color: var(--primary-color);
+    opacity: 0.8;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+  }
+  #name{
+    border-radius: 15px;
+  }
+  #email{
+    border-radius: 15px;
+  }
+#message{
+    border-radius: 15px;
+}

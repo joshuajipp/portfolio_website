@@ -29,3 +29,7 @@ body {
 .experience {
   min-height: calc(100vh - 74px);
 }
+.contact {
+  min-height: calc(100vh - 74px);
+  margin-top: 50px;
+}

@@ -1,20 +1,18 @@
 import React from "react";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
 import SchoolIcon from "@material-ui/icons/School";
 import WorkIcon from "@material-ui/icons/Work";
 import { motion } from "framer-motion";
 import "../styles/Experience.css";
+import "react-vertical-timeline-component/style.min.css";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
 
 function Experience(props) {
   return (
     <motion.div
       className="experience"
-      initial={{ width: 0 }}
-      animate={{ width: "100%" }}
       exit={{ x: window.innerWidth, transition: { duration: 0.2 } }}
     >
       <VerticalTimeline

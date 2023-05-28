@@ -1,4 +1,5 @@
 import { Routes, Route, useLocation } from "react-router-dom";
+import Contact from "../pages/Contact";
 import Home from "../pages/Home";
 import Projects from "../pages/Projects";
 import Experience from "../pages/Experience";
@@ -23,6 +24,9 @@ function AnimatedRoutes(props) {
           path="/experience"
           element={<Experience isDarkMode={props.isDarkMode} />}
         />
+        
+        <Route path="*" element={<Home isDarkMode={props.isDarkMode} />} />
+        <Route path="contact" element={<Contact />} />
       </Routes>
     </AnimatePresence>
   );
