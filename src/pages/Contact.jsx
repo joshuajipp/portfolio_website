@@ -1,7 +1,9 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import axios from "axios";
 import ReCAPTCHA from "react-google-recaptcha";
 import "../styles/Contact.css";
+import { motion } from "framer-motion";
+
 
 function Contact() {
   const formSparkUrl = "https://formspree.io/f/xqkonner";
@@ -64,8 +66,19 @@ function Contact() {
   const updateRecaptchaToken = (token) => {
     setReCaptchaToken(token);
   };
+  const pageRef = useRef(null);
+
+  useEffect(() => {
+    pageRef.current.classList.add("slide-from-left");
+  }, []);
 
   return (
+    <motion.div
+    ref={pageRef}
+    initial={{ width: 0 }}
+    animate={{ width: "100%" }}
+    exit={{ x: window.innerWidth, transition: { duration: 0.2 } }}
+  >
     <div className="contact">
       <div className="contact-container">
         <h1>
@@ -125,6 +138,7 @@ function Contact() {
         </form>
       </div>
     </div>
+    </motion.div>
   );
 }
 

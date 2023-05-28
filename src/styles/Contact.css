@@ -39,7 +39,7 @@
     padding-top: 5px;
   }
   
-  .submit-button {
+  .contactForm .submit-button {
     margin-top: 20px;
     background-color: #2e8cff;
     color: white;
@@ -53,7 +53,7 @@
     font-size: 16px;
   }  
   
-  .submit-button:hover {
+  .contactForm .submit-button:hover {
     background-color: #1d6fad;
   }
 
@@ -98,4 +98,10 @@
 .is-black .contactForm .text-area{
     background-color: rgba(255, 0, 0, 0);
     color: var(--invert-text-color);
+}
+.is-black .contactForm .submit-button{
+    background-color: var(--invert-primary-color);
+}
+.is-black .contactForm .submit-button:hover{
+    background-color: #4297ff;
 }
