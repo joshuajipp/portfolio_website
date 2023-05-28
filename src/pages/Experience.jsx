@@ -33,8 +33,8 @@ function Experience(props) {
             <h3 className="vertical-timeline-element-title">
               Crescent Heights High School
             </h3>
-            <h4 className="vertical-timeline-element-subtitle">Calgary, AB</h4>
-            <h5 className="grade"> Grade: 91%</h5>
+            <h4 className="vertical-timeline-element-subtitle">Grade: 91%</h4>
+            <h5 className="grade"> Calgary, AB</h5>
           </div>
           <ul className="text-box">
             <li>Captain of the Basketball Team</li>
@@ -52,7 +52,8 @@ function Experience(props) {
             <h3 className="vertical-timeline-element-title">
               Seasonal Warehouse Attendant
             </h3>
-            <h4 className="vertical-timeline-element-subtitle">Calgary, AB</h4>
+            <h4 className="vertical-timeline-element-subtitle">Atlas Trailer Coach Products</h4>
+            <h5 className="grade"> Calgary, AB</h5>
           </div>
           <ul className="text-box">
             <li>
@@ -72,8 +73,8 @@ function Experience(props) {
             <h3 className="vertical-timeline-element-title">
               University of Calgary
             </h3>
-            <h4 className="vertical-timeline-element-subtitle">Calgary, AB</h4>
-            <h5 className="grade">Grade: 3.7/4.0</h5>
+            <h4 className="vertical-timeline-element-subtitle">Grade: 3.7/4.0</h4>
+            <h5 className="grade">Calgary, AB</h5>
           </div>
 
           <div>Bachelor of Science - Software Engineering</div>
@@ -89,7 +90,8 @@ function Experience(props) {
             <h3 className="vertical-timeline-element-title">
               Big Data Developer Intern
             </h3>
-            <h4 className="vertical-timeline-element-subtitle">Calgary, AB</h4>
+            <h4 className="vertical-timeline-element-subtitle">SDK Tek Services Ltd.</h4>
+            <h5 className="grade">Calgary, AB</h5>
           </div>
           <ul className="text-box">
             <li>
@@ -107,6 +109,26 @@ function Experience(props) {
               regex patterns which trace back to the possible data leak in the
               commit being made.
             </li>
+          </ul>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          date="May 2023 - Present"
+          iconStyle={{ background: "#e9d35b", color: "#fff" }}
+          icon={<WorkIcon />}
+        >
+          <div className="note-header-indent">
+            <h3 className="vertical-timeline-element-title">
+              DevOps Consultant Intern
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">SDK Tek Services Ltd.</h4>
+            <h5 className="grade">Calgary, AB</h5>
+          </div>
+          <ul className="text-box">
+            <li>
+              In progress...
+            </li>
+
           </ul>
         </VerticalTimelineElement>
       </VerticalTimeline>
