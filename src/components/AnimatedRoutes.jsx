@@ -26,7 +26,7 @@ function AnimatedRoutes(props) {
         />
         
         <Route path="*" element={<Home isDarkMode={props.isDarkMode} />} />
-        <Route path="contact" element={<Contact />} />
+        <Route path="contact" element={<Contact isDarkMode={props.isDarkMode}/>} />
       </Routes>
     </AnimatePresence>
   );

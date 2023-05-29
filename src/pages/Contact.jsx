@@ -5,7 +5,7 @@ import "../styles/Contact.css";
 import { motion } from "framer-motion";
 
 
-function Contact() {
+function Contact(props) {
   const formSparkUrl = "https://formspree.io/f/xqkonner";
   const recaptchaKey = "6LdWaeolAAAAAFdL1Xcgy6Mv61xbFTBbAFrQhluI";
   const recaptchaRef = useRef();
@@ -122,12 +122,22 @@ function Contact() {
               className="message text-area" 
             ></textarea>
           </div>
-          
+
           <ReCAPTCHA
+            className="recaptcha-dark"
             ref={recaptchaRef}
             sitekey={recaptchaKey}
             onChange={updateRecaptchaToken}
+            theme="dark"
           />
+          <ReCAPTCHA
+            className="recaptcha-light"
+            ref={recaptchaRef}
+            sitekey={recaptchaKey}
+            onChange={updateRecaptchaToken}
+            theme="light"
+          />
+          
 
           <button
             disabled={submitting}

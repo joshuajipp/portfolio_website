@@ -107,3 +107,25 @@
 .is-black .contactForm .submit-button:hover{
     background-color: #4297ff;
 }
+.recaptcha-light{
+    animation: fadeInAnimation ease 0.3s;
+
+}
+.recaptcha-dark{
+    display:None;
+}
+.is-black .recaptcha-light{
+    display: none;
+}
+.is-black .recaptcha-dark{
+    animation: fadeInAnimation ease 0.3s;
+    display: block;
+}
+@keyframes fadeInAnimation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
