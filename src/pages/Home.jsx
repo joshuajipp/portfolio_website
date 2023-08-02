@@ -71,7 +71,7 @@ function Home(props) {
               </div>
               <div class="intro-soc__item">
                 <a
-                  href="https://drive.google.com/file/d/1NT51hITHpDMIUU4FB8u2PpDfiigWzezU/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1RZbrxkMbGHNBqW-BzV8R2RIXt6OEFPa9/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   title="Resume"
