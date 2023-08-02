@@ -126,7 +126,7 @@ function Experience(props) {
           </div>
           <ul className="text-box">
             <li>
-            Fully developed an Azure Function API to handle Azure Data Factory error messages.
+            Fully developed a Python Azure Function API to handle Azure Data Factory error messages.
             </li>
             <li>
             Implemented an email notification system that dispatches error details and the resolution provided by GPT-4 chat completions API, enhancing operational response times.
@@ -137,6 +137,27 @@ function Experience(props) {
             <li>
             Seamlessly embedded the API calls into Suncor's ADF pipeline templates.
             </li>
+
+          </ul>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          date="September 2023 - April 2024"
+          iconStyle={{ background: "#e9d35b", color: "#fff" }}
+          icon={<WorkIcon />}
+        >
+          <div className="note-header-indent">
+            <h3 className="vertical-timeline-element-title">
+              Junior Software Engineer
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">SDK Tek Services Ltd.</h4>
+            <h5 className="grade">Calgary, AB</h5>
+          </div>
+          <ul className="text-box">
+            <li>
+            In Progress...
+            </li>
+
 
           </ul>
         </VerticalTimelineElement>
