@@ -113,20 +113,29 @@ function Experience(props) {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="May 2023 - Present"
+          date="May 2023 - August 2023"
           iconStyle={{ background: "#e9d35b", color: "#fff" }}
           icon={<WorkIcon />}
         >
           <div className="note-header-indent">
             <h3 className="vertical-timeline-element-title">
-              DevOps Consultant Intern
+              Software Engineer Intern
             </h3>
             <h4 className="vertical-timeline-element-subtitle">SDK Tek Services Ltd.</h4>
             <h5 className="grade">Calgary, AB</h5>
           </div>
           <ul className="text-box">
             <li>
-              In progress...
+            Fully developed an Azure Function API to handle Azure Data Factory error messages.
+            </li>
+            <li>
+            Implemented an email notification system that dispatches error details and the resolution provided by GPT-4 chat completions API, enhancing operational response times.
+            </li>
+            <li>
+            Streamlined ticket creation with ServiceNow's API, eliminating manual ticketing.
+            </li>
+            <li>
+            Seamlessly embedded the API calls into Suncor's ADF pipeline templates.
             </li>
 
           </ul>
