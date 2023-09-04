@@ -126,38 +126,17 @@ function Experience(props) {
           </div>
           <ul className="text-box">
             <li>
-            Fully developed a Python Azure Function API to handle Azure Data Factory error messages.
+            Engineered and deployed a Python Azure Function API to handle Azure Data Factory data integration error messages.
             </li>
             <li>
-            Implemented an email notification system that dispatches error details and the resolution provided by GPT-4 chat completions API, enhancing operational response times.
+            Designed and implemented an automated email notification system using Cloud Services to dispatch error details. Integrated the resolution process with GPT-4 chat completions API, enhancing system uptime and operational response times.
             </li>
             <li>
-            Streamlined ticket creation with ServiceNow's API, eliminating manual ticketing.
+            Integrated and streamlined ticket creation with ServiceNow's RESTful API, advancing ITSM (IT Service Management) procedures and eliminating manual ticketing processes.
             </li>
             <li>
-            Seamlessly embedded the API calls into Suncor's ADF pipeline templates.
+            Successfully integrated and automated API calls, embedding them into Suncor's ADF data pipeline templates, ensuring smooth data flow and process efficiency.
             </li>
-
-          </ul>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          date="September 2023 - April 2024"
-          iconStyle={{ background: "#e9d35b", color: "#fff" }}
-          icon={<WorkIcon />}
-        >
-          <div className="note-header-indent">
-            <h3 className="vertical-timeline-element-title">
-              Junior Software Engineer
-            </h3>
-            <h4 className="vertical-timeline-element-subtitle">SDK Tek Services Ltd.</h4>
-            <h5 className="grade">Calgary, AB</h5>
-          </div>
-          <ul className="text-box">
-            <li>
-            In Progress...
-            </li>
-
 
           </ul>
         </VerticalTimelineElement>
