@@ -100,7 +100,7 @@ function Experience(props) {
             </li>
             <li>
               Created automated unit/integration tests using Python's, pytest
-              framework and chispa module to ensure the consistency and
+              framework and Chispa module to ensure consistency and
               reliability of the data transformations.
             </li>
             <li>
@@ -113,7 +113,7 @@ function Experience(props) {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="May 2023 - August 2023"
+          date="May 2023 - September 2023"
           iconStyle={{ background: "#e9d35b", color: "#fff" }}
           icon={<WorkIcon />}
         >
