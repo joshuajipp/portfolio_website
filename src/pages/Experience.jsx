@@ -88,7 +88,7 @@ function Experience(props) {
         >
           <div className="note-header-indent">
             <h3 className="vertical-timeline-element-title">
-              Big Data Developer Intern
+              Data Engineer Intern
             </h3>
             <h4 className="vertical-timeline-element-subtitle">SDK Tek Services Ltd.</h4>
             <h5 className="grade">Calgary, AB</h5>
@@ -119,7 +119,7 @@ function Experience(props) {
         >
           <div className="note-header-indent">
             <h3 className="vertical-timeline-element-title">
-              Software Engineer Intern
+              Cloud Engineer Intern
             </h3>
             <h4 className="vertical-timeline-element-subtitle">SDK Tek Services Ltd.</h4>
             <h5 className="grade">Calgary, AB</h5>
