@@ -2,38 +2,40 @@ import wordleImg from "./images/wordle.png";
 import lotionImg from "./images/lotion.png";
 import lastShowImg from "./images/last_show.png";
 import portfolioImg from "./images/portfolio.png";
+import flightImg from "./images/flight-booking.jpg";
 export const ProjectList = [
+  {
+    name: "Flight Booking App",
+    source_url: "https://github.com/joshuajipp/airlineAPI",
+    web_url: "https://master--ensf480-flight-project-group-10.netlify.app/",
+    skills: ["Java","Spring Boot", "MySQL","AWS","ReactJS", "CSS"],
+    image: flightImg,
+  },
   {
     name: "Obituary Generation App",
     image: lastShowImg,
     skills: [
       "Python",
       "ReactJS",
-      "AWS Lambda",
-      "Cloudinary API",
-      "OpenAI API",
       "CSS",
       "Terraform",
-      "AWS DynamoDB",
-      "AWS Param. Store",
-      "AWS Polly",
+      "AWS"
     ],
 
     web_url: "https://imaginative-tulumba-a6be62.netlify.app",
     source_url: "https://github.com/joshuajipp/the-last-show.git",
   },
   {
-    name: "Note-Taking App",
+    name: "Note Taking App",
     image: lotionImg,
     skills: [
       "ReactJS",
       "Python",
-      "AWS Lambda",
-      "AWS DynamoDB",
+      "AWS",
       "CSS",
       "Terraform",
       "Google OAuth 2.0",
-      "AWS S3",
+
     ],
     web_url: "https://exquisite-hamster-0169f7.netlify.app",
     source_url: "https://github.com/joshuajipp/lotionReactApp.git",
